@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{7AED74E3-DFAB-7E5E-39FE-E22B2449B012}") = "night_in_Shining_armor_Unity", "Assembly-CSharp.csproj", "{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}"
+EndProject
+Project("{7AED74E3-DFAB-7E5E-39FE-E22B2449B012}") = "night_in_Shining_armor_Unity", "Assembly-CSharp-Editor.csproj", "{B1439359-1441-D3FE-56CD-4433C1CD8854}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1439359-1441-D3FE-56CD-4433C1CD8854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1439359-1441-D3FE-56CD-4433C1CD8854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1439359-1441-D3FE-56CD-4433C1CD8854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1439359-1441-D3FE-56CD-4433C1CD8854}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
