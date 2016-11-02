@@ -85,6 +85,7 @@
 -define:UNITY_TEAM_LICENSE
 'Assets/Scripts/CameraController.cs'
 'Assets/Scripts/PlayerController.cs'
+'Assets/Scripts/PlayerStartPoint.cs'
 'Assets/Scripts/loadNewArea.cs'
 'Assets/Tiled2Unity/Scripts/Runtime/ImportBehaviour.cs'
 'Assets/Tiled2Unity/Scripts/Runtime/SortingLayerExposed.cs'
