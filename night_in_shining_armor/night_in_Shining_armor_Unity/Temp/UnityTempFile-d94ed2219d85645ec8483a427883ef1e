@@ -86,6 +86,7 @@
 'Assets/Scripts/CameraController.cs'
 'Assets/Scripts/PlayerController.cs'
 'Assets/Scripts/PlayerStartPoint.cs'
+'Assets/Scripts/SlimeController.cs'
 'Assets/Scripts/loadNewArea.cs'
 'Assets/Tiled2Unity/Scripts/Runtime/ImportBehaviour.cs'
 'Assets/Tiled2Unity/Scripts/Runtime/SortingLayerExposed.cs'
