@@ -1,0 +1,17 @@
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/UnityEngine.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/UnityEditor.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/obj/Debug/Assembly-CSharp.dll
+/Users/Swifteagle/Documents/night_in_shining_armor/night_in_shining_armor/night_in_Shining_armor_Unity/obj/Debug/Assembly-CSharp.dll.mdb
