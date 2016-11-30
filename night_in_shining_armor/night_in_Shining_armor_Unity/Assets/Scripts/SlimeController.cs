@@ -20,6 +20,8 @@ public class SlimeController : MonoBehaviour {
 	public float waitToReload;
 	private bool reloading;
 
+//	public PlayerHealth playerMaxHealth; //added line
+
 	private GameObject thePlayer;
 	// Use this for initialization
 	void Start () {
@@ -72,15 +74,15 @@ public class SlimeController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other){
 
-		/*print ("collision yay");
+//		print ("collision yay");
 
-		if (other.gameObject.name == "Player") {
-			other.gameObject.SetActive(false);
-			reloading = true;
-			thePlayer = other.gameObject;
-//			Destroy (other.gameObject);
-//			print ("interaction");
-		}*/
+//		if (other.gameObject.name == "Player") {
+////			other.gameObject.SetActive(false);
+//			reloading = true;
+//			thePlayer = other.gameObject;
+////			Destroy (other.gameObject);
+////			print ("interaction");
+//		}
 
 	}
 }

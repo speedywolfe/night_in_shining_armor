@@ -22,6 +22,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	public void HurtPlayer(int damageToGive){
 		playerCurrentHealth = playerCurrentHealth - damageToGive;
+
 	}
 
 
