@@ -63,6 +63,7 @@
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Tiled2Unity\Imported\house.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\arena_area.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\forrest_area.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\swerve_area.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\test_area.tiled2unity.xml" />
