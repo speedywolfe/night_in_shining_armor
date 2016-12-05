@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 749975112e1084098aad317739621d43
-timeCreated: 1480971760
+guid: 06b6de62d9f5642a084e23cf7e97166c
+timeCreated: 1480972634
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -10,7 +10,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Pixeled
+  - 8-bit Operator+
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
