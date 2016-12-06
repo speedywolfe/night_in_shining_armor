@@ -8,6 +8,8 @@ public class DialogueHolder : MonoBehaviour {
 
 	public string[] dialogueLines;
 
+	public bool isCutScene;
+
 	// Use this for initialization
 	void Start () {
 		dMan = FindObjectOfType<DialogueManager> ();
@@ -20,7 +22,7 @@ public class DialogueHolder : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		if(other.gameObject.name == "Player") {
-			if(Input.GetKeyUp(KeyCode.Space)) {
+			if(Input.GetKeyUp(KeyCode.Space) || isCutScene) {
 //				dMan.ShowBox (dialogue);
 
 				if(!dMan.dialogActive) {
