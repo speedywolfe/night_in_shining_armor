@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerStartPoint.cs" />
      <Compile Include="Assets\Scripts\SlimeController.cs" />
+     <Compile Include="Assets\Scripts\TrollController.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\loadNewArea.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
