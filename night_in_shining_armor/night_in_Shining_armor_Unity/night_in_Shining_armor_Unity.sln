@@ -1,9 +1,9 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{7AED74E3-DFAB-7E5E-39FE-E22B2449B012}") = "night_in_Shining_armor_Unity", "Assembly-CSharp.csproj", "{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "night_in_Shining_armor_Unity", "Assembly-CSharp.csproj", "{F1E92C51-7854-1B9C-8F71-D5E8EBCBBC16}"
 EndProject
-Project("{7AED74E3-DFAB-7E5E-39FE-E22B2449B012}") = "night_in_Shining_armor_Unity", "Assembly-CSharp-Editor.csproj", "{B1439359-1441-D3FE-56CD-4433C1CD8854}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "night_in_Shining_armor_Unity", "Assembly-CSharp-Editor.csproj", "{B1439359-1441-D3FE-56CD-4433C1CD8854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

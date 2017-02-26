@@ -32,7 +32,7 @@ public class TrollController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other) {
 		dHold.isCutScene = false;
 		dMan.dBox.SetActive (false);
-		Application.LoadLevel ("main");
-		thePlayer.startPoint = "Main In";
+		Application.LoadLevel ("Pass_area");
+		thePlayer.startPoint = "PassAreaRight";
 	}
 }
