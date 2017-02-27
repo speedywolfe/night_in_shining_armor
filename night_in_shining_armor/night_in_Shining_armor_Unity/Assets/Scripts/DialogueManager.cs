@@ -49,5 +49,4 @@ public class DialogueManager : MonoBehaviour {
 
 		thePlayer.canMove = false;
 	}
-
 }

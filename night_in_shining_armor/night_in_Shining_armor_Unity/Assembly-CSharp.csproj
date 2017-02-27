@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Bounds.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DialogueHolder.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
@@ -55,6 +56,9 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerStartPoint.cs" />
+     <Compile Include="Assets\Scripts\QuestManager.cs" />
+     <Compile Include="Assets\Scripts\QuestObject.cs" />
+     <Compile Include="Assets\Scripts\QuestTrigger.cs" />
      <Compile Include="Assets\Scripts\SlimeController.cs" />
      <Compile Include="Assets\Scripts\TrollController.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
@@ -73,6 +77,7 @@
      <None Include="Assets\Tiled2Unity\Imported\house.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
      <None Include="Assets\Tiled2Unity\Imported\arena_area.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\academy.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\forrest_area.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\swerve_area.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\test_area.tiled2unity.xml" />
