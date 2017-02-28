@@ -15,7 +15,8 @@ public class PlayerHealth : MonoBehaviour {
 	void Update () {
 
 		if (playerCurrentHealth <= 0) {
-			gameObject.SetActive (false);
+			Application.LoadLevel(Application.loadedLevel);
+			playerCurrentHealth = playerMaxHealth;
 		}
 	
 	}

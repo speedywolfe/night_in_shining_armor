@@ -79,6 +79,8 @@
 -define:UNITY_TEAM_LICENSE
 'Assets/Scripts/Bounds.cs'
 'Assets/Scripts/CameraController.cs'
+'Assets/Scripts/ChangeConfidence.cs'
+'Assets/Scripts/ConfidenceManager.cs'
 'Assets/Scripts/DialogueHolder.cs'
 'Assets/Scripts/DialogueManager.cs'
 'Assets/Scripts/EnemyHealthManager.cs'

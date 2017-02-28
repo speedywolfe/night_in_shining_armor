@@ -5,10 +5,14 @@ public class EnemyHealthManager : MonoBehaviour {
 
 	public int MaxHealth;
 	public int CurrentHealth;
+	public int RaiseConfidence;
+
+	private GameObject thePlayer;
 
 	// Use this for initialization
 	void Start () {
 		CurrentHealth = MaxHealth;
+		thePlayer = GameObject.Find ("Player");
 	}
 
 	// Update is called once per frame
@@ -16,6 +20,7 @@ public class EnemyHealthManager : MonoBehaviour {
 
 		if (CurrentHealth <= 0) {
 			Destroy (gameObject);
+			thePlayer.GetComponent<ConfidenceManager>().ChangeConfidence(RaiseConfidence);
 		}
 
 	}
