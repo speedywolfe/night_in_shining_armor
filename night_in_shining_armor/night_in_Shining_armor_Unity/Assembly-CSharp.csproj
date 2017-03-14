@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\QuestManager.cs" />
      <Compile Include="Assets\Scripts\QuestObject.cs" />
      <Compile Include="Assets\Scripts\QuestTrigger.cs" />
+     <Compile Include="Assets\Scripts\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\SlimeController.cs" />
      <Compile Include="Assets\Scripts\TrollController.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />

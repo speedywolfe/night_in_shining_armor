@@ -30,9 +30,14 @@ public class TrollController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
+		//ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
+		//yield return StartCoroutine (sf.FadeToBlack ());
+
 		dHold.isCutScene = false;
 		dMan.dBox.SetActive (false);
-		Application.LoadLevel ("Pass_area");
-		thePlayer.startPoint = "PassAreaRight";
+
+		//yield return StartCoroutine (sf.FadeToClear());
+//		Application.LoadLevel ("Pass_area");
+//		thePlayer.startPoint = "PassAreaRight";
 	}
 }
