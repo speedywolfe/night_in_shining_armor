@@ -9,6 +9,7 @@ public class TrollController : MonoBehaviour {
 	private GameObject Player;
 	private DialogueHolder dHold;
 	private DialogueManager dMan;
+	private TrollCutScene TCut;
 
 	public float Speed;
 	private float Range;
@@ -21,6 +22,7 @@ public class TrollController : MonoBehaviour {
 		Player = GameObject.Find("Player");
 		dHold = FindObjectOfType<DialogueHolder> ();
 		dMan = FindObjectOfType<DialogueManager> ();
+		TCut = FindObjectOfType<TrollCutScene> ();
 	}
 	
 	// Update is called once per frame
@@ -30,11 +32,10 @@ public class TrollController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
-		//ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
-		//yield return StartCoroutine (sf.FadeToBlack ());
+		TCut.trollTouched ();
 
-		dHold.isCutScene = false;
-		dMan.dBox.SetActive (false);
+//		dHold.isCutScene = false;
+//		dMan.dBox.SetActive (false);
 
 		//yield return StartCoroutine (sf.FadeToClear());
 //		Application.LoadLevel ("Pass_area");
