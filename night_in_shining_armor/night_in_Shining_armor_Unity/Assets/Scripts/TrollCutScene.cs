@@ -5,12 +5,17 @@ using UnityEngine;
 public class TrollCutScene : MonoBehaviour {
 
 	private PlayerController thePlayer;
+	private Fading fading;
+
+	private float timer = 0.0f;
+	public float secsToWait = 3;
 
 	bool startCutScene;
 
 	// Use this for initialization
 	void Start () {
 		thePlayer = FindObjectOfType<PlayerController> ();
+		fading = GetComponent<Fading> ();
 	}
 	
 	// Update is called once per frame
@@ -25,17 +30,6 @@ public class TrollCutScene : MonoBehaviour {
 	}
 
 	public void trollTouched() {
-		Debug.Log("inside troll touched");
-//		ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
-//		yield return StartCoroutine (sf.FadeToBlack ());
-//		print ("After first yield");
-//
-//		yield return new WaitForSeconds (3);
-//		print ("After three seconds");
-//
-//		yield return StartCoroutine (sf.FadeToClear());
-//		print ("After last yield");
-		//		Application.LoadLevel ("Pass_area");
-		//		thePlayer.startPoint = "PassAreaRight";
+		fading.startFadeOut ();
 	}
 }
