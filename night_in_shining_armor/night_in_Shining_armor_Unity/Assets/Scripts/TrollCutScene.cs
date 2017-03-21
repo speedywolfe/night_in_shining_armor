@@ -9,9 +9,10 @@ public class TrollCutScene : MonoBehaviour {
 	private DialogueHolder dHold;
 	public string[] cutSceneDialogue;
 
-	private float timer = 0.0f;
+	private float timer = 3.0f;
 
 	public bool startCutScene;
+	private bool timerDone = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,10 +24,19 @@ public class TrollCutScene : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		thePlayer.canMove = false;
+		if(startCutScene) {
+			timer -= Time.deltaTime;
+			if(timer < 0) {
+				fading.startFadeIn();
+			}
+		}
 	}
 		
 	public void trollTouched() {				
 		fading.startFadeOut ();
 		dHold.isCutScene = true;
+		if(timerDone) {
+			fading.startFadeOut(); 
+		}
 	}
 }

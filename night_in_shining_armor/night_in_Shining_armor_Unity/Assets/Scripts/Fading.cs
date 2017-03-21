@@ -15,27 +15,26 @@ public class Fading : MonoBehaviour {
 
 	void OnGUI() {
 		if (fadeOut) {
-			print ("fading out");
-			alpha -= -1 * (fadeSpeed + Time.deltaTime);
+			alpha += (fadeSpeed + Time.deltaTime);
 			alpha = Mathf.Clamp01 (alpha);
 
-			GUI.color = new Color (GUI.color.r, GUI.color.g, GUI.color.b, alpha);
-			GUI.depth = drawDepth;
-			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), fadeOutTexture);
-//			if(alpha == 1.0f) {
-//				fadeOut = false;
-//			}
+			if(alpha == 1.0f) {
+				fadeOut = false;
+			}
 		}
 		else if (fadeIn) {
-			print ("if fade in");
-			alpha += fadeSpeed + Time.deltaTime;
+			alpha -= fadeSpeed + Time.deltaTime;
 			alpha = Mathf.Clamp01 (alpha);
 
-			GUI.color = new Color (GUI.color.r, GUI.color.g, GUI.color.b, alpha);
-			GUI.depth = drawDepth;
-			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), fadeOutTexture);
-//			fadeIn = false;
+			if(alpha == 0.0f) {
+				fadeOut = false;
+			}
 		}
+
+		//Draw Fade Texture
+		GUI.color = new Color (GUI.color.r, GUI.color.g, GUI.color.b, alpha);
+		GUI.depth = drawDepth;
+		GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), fadeOutTexture);
 	}
 		
 	public void startFadeIn() {
