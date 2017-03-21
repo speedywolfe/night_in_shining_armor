@@ -26,5 +26,6 @@ public class TrollController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other) {
 		TCut.trollTouched ();
+		TCut.startCutScene = true;
 	}
 }

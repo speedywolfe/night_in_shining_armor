@@ -6,30 +6,27 @@ public class TrollCutScene : MonoBehaviour {
 
 	private PlayerController thePlayer;
 	private Fading fading;
+	private DialogueHolder dHold;
+	public string[] cutSceneDialogue;
 
 	private float timer = 0.0f;
-	public float secsToWait = 3;
 
-	bool startCutScene;
+	public bool startCutScene;
 
 	// Use this for initialization
 	void Start () {
 		thePlayer = FindObjectOfType<PlayerController> ();
 		fading = GetComponent<Fading> ();
+		dHold = GetComponent<DialogueHolder> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		thePlayer.canMove = false;
 	}
-
-	void OnCollisionEnter2D(Collision2D other) {
-		if(other.gameObject.name == "Player") {
-			startCutScene = true;
-		}
-	}
-
-	public void trollTouched() {
+		
+	public void trollTouched() {				
 		fading.startFadeOut ();
+		dHold.isCutScene = true;
 	}
 }
