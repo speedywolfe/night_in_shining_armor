@@ -1,10 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Fading.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NpcController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Fading.cs" Line="17" Column="16" />
-      <File FileName="Assets/Scripts/TrollCutScene.cs" Line="34" Column="3" />
-      <File FileName="Assets/Scripts/TrollController.cs" Line="28" Column="20" />
+      <File FileName="Assets/Scripts/NpcController.cs" Line="22" Column="39" />
+      <File FileName="Assets/Scripts/DialogueHolder.cs" Line="22" Column="42" />
+      <File FileName="Assets/Scripts/Fading.cs" Line="29" Column="23" />
+      <File FileName="Assets/Scripts/TrollCutScene.cs" Line="30" Column="23" />
+      <File FileName="Assets/Scripts/TrollController.cs" Line="24" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

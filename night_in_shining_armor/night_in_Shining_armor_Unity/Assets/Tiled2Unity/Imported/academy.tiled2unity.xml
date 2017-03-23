@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 2/26/2017 9:15:04 PM-->
+<!--Last exported: 3/22/2017 10:17:25 PM-->
 <Tiled2Unity version="1.0.7.10">
   <AssignMaterial mesh="mesh_0001" material="roguelikeSheet_transparent" />
   <AssignMaterial mesh="mesh_0002" material="roguelikeSheet_transparent" />
@@ -13,9 +13,9 @@
       <GameObject name="roguelikeSheet_transparent" copy="mesh_0002" sortingLayerName="" sortingOrder="1" opacity="1" />
     </GameObject>
     <GameObject name="Object Layer 1" x="0" y="0" z="0">
-      <GameObject name="PolylineObject" x="5.041669" y="-16.979187" rotation="0" layer="">
+      <GameObject name="PolylineObject" x="5.041669" y="-16.866" rotation="0" layer="">
         <EdgeCollider2D>
-          <Points>0,0 -0.02083331,0.9583312 -4.020831,0.9791688 -4.041669,6.9375 -1,6.958313 -1.041669,7.958313 0.02083331,7.958313 0,8.979188 -1.020831,8.9375 -1.020831,9.958312 -4.0625,9.9375 -4.020831,10.97919 5.958331,10.95831 5.958331,0.9166688 2.020831,0.9583312 2,-0.04166669 0.04166669,0.02083331</Points>
+          <Points>0,0 -0.02083331,0.94845 -4.020831,0.969075 -4.041669,6.865938 -1,6.886562 -1.041669,7.87625 0.02083331,7.87625 0,8.886625 -1.020831,8.845375 -1.020831,9.855625 -4.0625,9.835062 -4.020831,10.866 5.958331,10.84531 5.958331,0.9072188 2.020831,0.94845 2,-0.04123706 0.04166669,0.0206185</Points>
         </EdgeCollider2D>
       </GameObject>
     </GameObject>
