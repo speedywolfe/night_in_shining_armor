@@ -27,6 +27,8 @@ public class TrollCutScene : MonoBehaviour {
 		if(startCutScene) {
 			timer -= Time.deltaTime;
 			if(timer < 0) {
+				Application.LoadLevel ("Troll_Arena_after");
+				thePlayer.startPoint = "PlayerStart";
 				fading.startFadeIn();
 			}
 		}
@@ -34,9 +36,8 @@ public class TrollCutScene : MonoBehaviour {
 		
 	public void trollTouched() {				
 		fading.startFadeOut ();
+		thePlayer.gameObject.GetComponent<ConfidenceManager>().ChangeConfidence(-100);
 		dHold.isCutScene = true;
-		if(timerDone) {
-			fading.startFadeOut(); 
-		}
+
 	}
 }
