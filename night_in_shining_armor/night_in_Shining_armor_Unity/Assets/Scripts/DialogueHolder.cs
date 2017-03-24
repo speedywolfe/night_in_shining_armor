@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class DialogueHolder : MonoBehaviour {
-
-	public string dialogue;
+	
 	private DialogueManager dMan;
 
 	public string[] dialogueLines;
@@ -20,11 +19,13 @@ public class DialogueHolder : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		if(other.gameObject.name == "Player") {
+			print ("collided");
 			dialogueLaunch ();
 		}
 	}
 		
 	public void dialogueLaunch() {
+		print ("dialogue launch");
 		if(Input.GetKeyUp(KeyCode.Space) || isCutScene) {
 			if(!dMan.dialogActive) {
 				thePlayer.canMove = false;

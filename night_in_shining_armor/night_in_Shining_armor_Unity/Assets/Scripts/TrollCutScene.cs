@@ -38,6 +38,5 @@ public class TrollCutScene : MonoBehaviour {
 		fading.startFadeOut ();
 		thePlayer.gameObject.GetComponent<ConfidenceManager>().ChangeConfidence(-100);
 		dHold.isCutScene = true;
-
 	}
 }

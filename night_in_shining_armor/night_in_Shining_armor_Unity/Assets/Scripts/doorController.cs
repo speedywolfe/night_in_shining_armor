@@ -13,7 +13,6 @@ public class doorController : MonoBehaviour {
 	void Update() {
 		Scene currentScene = SceneManager.GetActiveScene ();
 		sceneName = currentScene.name;
-		print (sceneName);
 		if(sceneName == "academy") {
 			if (!academyCheck) {
 				if (academyDoor) {
