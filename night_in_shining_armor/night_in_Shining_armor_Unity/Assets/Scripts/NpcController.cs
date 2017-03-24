@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class NpcController : MonoBehaviour {
 
-	private GameObject door;
-	private bool talkedToGuy;
+	private PlayerController thePlayer;
+	private doorController dControl;
 
 	void Start() {
-		door = GameObject.Find ("outer_door");
+		thePlayer = FindObjectOfType<PlayerController> ();
+		dControl = thePlayer.GetComponent<doorController> ();
 	}
-
-	void Update() {
-		if(talkedToGuy) {
-			door.SetActive(false);
-		}
-	}
-
+		
 	void OnTriggerStay2D(Collider2D other) {
 		if(other.gameObject.name == "Player") {
 			if(Input.GetKeyUp(KeyCode.Space)) {
-				talkedToGuy = true;
+				dControl.academyDoor = true;
 			}
 		}
 	}
