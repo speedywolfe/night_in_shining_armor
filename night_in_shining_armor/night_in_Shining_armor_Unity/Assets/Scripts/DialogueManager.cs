@@ -8,6 +8,8 @@ public class DialogueManager : MonoBehaviour {
 	public Text dText;
 
 	public bool dialogActive;
+	public bool cutScene = false;
+	public bool dialogEnded = false;
 
 	public string[] dialogLines;
 	public int currentLine;
@@ -31,6 +33,9 @@ public class DialogueManager : MonoBehaviour {
 
 			currentLine = 0;
 			thePlayer.canMove = true;
+			if(cutScene) {
+				dialogEnded= true;
+			}
 		}
 		if (dialogActive) {
 			dText.text = dialogLines [currentLine];

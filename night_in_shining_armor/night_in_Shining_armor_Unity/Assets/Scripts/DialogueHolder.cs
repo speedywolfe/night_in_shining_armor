@@ -19,15 +19,16 @@ public class DialogueHolder : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		if(other.gameObject.name == "Player") {
-			print ("collided");
 			dialogueLaunch ();
 		}
 	}
 		
 	public void dialogueLaunch() {
-		print ("dialogue launch");
 		if(Input.GetKeyUp(KeyCode.Space) || isCutScene) {
 			if(!dMan.dialogActive) {
+				if(isCutScene) {
+					dMan.cutScene = true;
+				}
 				thePlayer.canMove = false;
 				dMan.dialogLines = dialogueLines;
 				dMan.currentLine = 0;

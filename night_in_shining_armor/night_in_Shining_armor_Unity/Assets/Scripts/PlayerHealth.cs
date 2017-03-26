@@ -30,4 +30,8 @@ public class PlayerHealth : MonoBehaviour {
 	public void SetMaxHealth(){
 		playerCurrentHealth = playerMaxHealth;
 	}
+
+	public void BarelyAlive() {
+		playerCurrentHealth = 1;
+	}
 }
