@@ -3,7 +3,6 @@ using System.Collections;
 
 public class HurtEnemy : MonoBehaviour {
 
-	private float baseDamage = 10.0f;
 	private int damageToGive;
 	public GameObject damageBurst;
 	public Transform hitPoint;
@@ -19,7 +18,6 @@ public class HurtEnemy : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Enemy") {
 			int newDamage = ComputeDamage ();
-			print (newDamage);
 			other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(newDamage);
 			Instantiate (damageBurst, hitPoint.position, hitPoint.rotation); 
 		}
@@ -28,8 +26,10 @@ public class HurtEnemy : MonoBehaviour {
 
 	int ComputeDamage() {
 		confidence = thePlayer.gameObject.GetComponent<ConfidenceManager> ().playerCurrentConfidence;
-		baseDamage = baseDamage * (confidence / 10);
-		damageToGive = Mathf.CeilToInt(baseDamage);
+		damageToGive = Mathf.CeilToInt(confidence / 10);
+		if(damageToGive == 0) {
+			damageToGive = 1;
+		}
 		return damageToGive;
 	}
 }
