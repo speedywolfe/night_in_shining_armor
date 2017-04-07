@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 public class doorController : MonoBehaviour {
 
 	public bool academyDoor = false;
-	public bool academyCheck = false;
+	private bool academyCheck = false;
+
+	public bool villageDoor = false;
+	private bool villageCheck = false;
+
 	private GameObject door;
 	private string sceneName;
 
@@ -22,8 +26,18 @@ public class doorController : MonoBehaviour {
 				}
 			}
 		}
+		else if (sceneName == "village_after") {
+			if (!villageCheck) {
+				if (villageDoor) {
+					door = GameObject.Find ("BottomGate");
+					door.SetActive (false);
+					villageCheck = true;
+				}
+			}
+		}
 		else {
 			academyCheck = false;
+			villageCheck = false;
 		}
 	}
 }
