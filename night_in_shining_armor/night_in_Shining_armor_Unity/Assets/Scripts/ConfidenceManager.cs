@@ -9,7 +9,7 @@ public class ConfidenceManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		playerCurrentConfidence = playerMaxConfidence;
+		playerCurrentConfidence = 50;
 	}
 	
 	// Update is called once per frame
