@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour {
 			}
 
 
-			if (Input.GetKeyDown (KeyCode.Space)) {
+			if (Input.GetKeyDown (KeyCode.X)) {
 				attackTimeCounter = attackTime;
 				attacking = true;
 				myRigidbody.velocity = Vector2.zero;

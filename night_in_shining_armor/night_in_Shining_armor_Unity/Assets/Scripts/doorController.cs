@@ -11,6 +11,9 @@ public class doorController : MonoBehaviour {
 	public bool villageDoor = false;
 	private bool villageCheck = false;
 
+	public bool clearingDoor = false;
+	private bool clearingCheck = false;
+
 	private GameObject door;
 	private string sceneName;
 
@@ -32,6 +35,17 @@ public class doorController : MonoBehaviour {
 					door = GameObject.Find ("BottomGate");
 					door.SetActive (false);
 					villageCheck = true;
+				}
+			}
+		}
+		else if (sceneName == "clearing") {
+			if (!clearingCheck) {
+				if (clearingDoor) {
+					door = GameObject.Find ("upper_gate");
+					door.SetActive (false);
+					door = GameObject.Find ("troll2");
+					door.SetActive (false);
+					clearingCheck = true;
 				}
 			}
 		}

@@ -12,10 +12,19 @@ public class TrollController2 : MonoBehaviour {
 	public float Speed;
 	private bool stillMoving = true;
 
+	private PlayerController thePlayer;
+	private doorController dControl;
+	private EnemyHealthManager EHMan;
+
 	// Use this for initialization
 	void Start () {
 		Enemy = GameObject.Find ("troll2");
 		Player = GameObject.Find("Player");
+
+		thePlayer = FindObjectOfType<PlayerController> ();
+		dControl = thePlayer.GetComponent<doorController> ();
+
+		EHMan = gameObject.GetComponent<EnemyHealthManager> ();
 	}
 	
 	// Update is called once per frame
@@ -28,6 +37,11 @@ public class TrollController2 : MonoBehaviour {
 			Enemy.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 			Animator anim = Enemy.GetComponent<Animator> ();
 			anim.enabled = false;
+		}
+
+		print (EHMan.CurrentHealth);
+		if(EHMan.CurrentHealth < 5) {
+			dControl.clearingDoor = true;
 		}
 	}
 }
