@@ -11,10 +11,12 @@ public class DialogueManager : MonoBehaviour {
 	public bool cutScene = false;
 	public bool dialogEnded = false;
 
+
 	public string[] dialogLines;
 	public int currentLine;
 
-	private PlayerController thePlayer;
+	private PlayerController thePlayer;	
+	public GameObject dPrompt;
 
 	// Use this for initialization
 	void Start () {
@@ -42,16 +44,24 @@ public class DialogueManager : MonoBehaviour {
 		}
 	}
 
-	public void ShowBox(string dialogue) {
-		dialogActive = true;
-		dBox.SetActive (true);
-		dText.text = dialogue;
-	}
+//	public void ShowBox(string dialogue) {
+//		dialogActive = true;
+//		dBox.SetActive (true);
+//		dText.text = dialogue;
+//	}
 
 	public void ShowDialogue() {
 		dialogActive = true;
 		dBox.SetActive (true);
 
 		thePlayer.canMove = false;
+	}
+
+	public void ShowPrompt() {
+		dPrompt.SetActive (true);
+	}
+
+	public void HidePrompt() {
+		dPrompt.SetActive (false);
 	}
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Intro/academy.unity
+- path: Assets/Scenes/Intro/Troll_Arena.unity
   isLoaded: 1
   isActive: 1

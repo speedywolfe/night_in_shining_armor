@@ -17,21 +17,33 @@ public class DialogueHolder : MonoBehaviour {
 		thePlayer = FindObjectOfType<PlayerController> ();
 	}
 
-	void OnTriggerStay2D(Collider2D other) {
+	void OnTriggerStay2D(Collider2D other) { 
 		if(other.gameObject.name == "Player") {
 			dialogueLaunch ();
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.name == "Player") {
+			dMan.ShowPrompt ();
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D other){
+		if (other.gameObject.name == "Player") {
+			dMan.HidePrompt (); 
+		}
+	}
 		
 	public void dialogueLaunch() {
-		if(Input.GetKeyUp(KeyCode.Space) || isCutScene) {
+		if(Input.GetKeyDown(KeyCode.Space) || isCutScene) {
 			if(!dMan.dialogActive) {
 				if(isCutScene) {
 					dMan.cutScene = true;
 				}
 				thePlayer.canMove = false;
 				dMan.dialogLines = dialogueLines;
-				dMan.currentLine = 0;
+				dMan.currentLine = -1;
 				dMan.ShowDialogue();
 			}
 		}
