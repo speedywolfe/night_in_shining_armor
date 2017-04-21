@@ -50,7 +50,6 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ChangeConfidence.cs" />
      <Compile Include="Assets\Scripts\ConfidenceManager.cs" />
-     <Compile Include="Assets\Scripts\CutSceneController.cs" />
      <Compile Include="Assets\Scripts\DialogueHolder.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />

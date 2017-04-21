@@ -10,11 +10,8 @@ public class TrollCutScene : MonoBehaviour {
 	private DialogueHolder dHold;
 	public string[] cutSceneDialogue;
 
-	private float timer = 1.0f;
-
 	public bool startCutScene;
 	public bool dialogueFinished;
-	private bool timerDone = false;
 
 	// Use this for initialization
 	void Start () {
@@ -41,6 +38,6 @@ public class TrollCutScene : MonoBehaviour {
 		
 	public void trollTouched() {				
 		fading.startFadeOut ();
-		dHold.isCutScene = true;
+		dHold.dialogueLaunch();
 	}
 }

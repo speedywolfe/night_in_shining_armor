@@ -8,6 +8,7 @@ public class DialogueHolder : MonoBehaviour {
 	public string[] dialogueLines;
 
 	public bool isCutScene;
+	public bool noPrompt;
 
 	private PlayerController thePlayer;
 
@@ -16,16 +17,20 @@ public class DialogueHolder : MonoBehaviour {
 		dMan = FindObjectOfType<DialogueManager> ();
 		thePlayer = FindObjectOfType<PlayerController> ();
 	}
-
+		
 	void OnTriggerStay2D(Collider2D other) { 
-		if(other.gameObject.name == "Player") {
-			dialogueLaunch ();
+		if(other.gameObject.name == "Player" && noPrompt == false) {
+			if(Input.GetKeyDown(KeyCode.Space)) {
+				dialogueLaunch ();
+			}
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.name == "Player") {
-			dMan.ShowPrompt ();
+			if (noPrompt == false) {
+				dMan.ShowPrompt ();
+			}
 		}
 	}
 
@@ -36,16 +41,18 @@ public class DialogueHolder : MonoBehaviour {
 	}
 		
 	public void dialogueLaunch() {
-		if(Input.GetKeyDown(KeyCode.Space) || isCutScene) {
-			if(!dMan.dialogActive) {
-				if(isCutScene) {
-					dMan.cutScene = true;
-				}
-				thePlayer.canMove = false;
-				dMan.dialogLines = dialogueLines;
-				dMan.currentLine = -1;
-				dMan.ShowDialogue();
+		if(!dMan.dialogActive) {
+			if(isCutScene) {
+				dMan.cutScene = true;
 			}
+			thePlayer.canMove = false;
+			dMan.dialogLines = dialogueLines;
+			if (noPrompt) {
+				dMan.currentLine = 0;
+			} else {
+				dMan.currentLine = -1;
+			}
+			dMan.ShowDialogue();
 		}
 	}
 }

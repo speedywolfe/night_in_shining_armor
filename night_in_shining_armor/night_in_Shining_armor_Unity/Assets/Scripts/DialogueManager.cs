@@ -8,9 +8,8 @@ public class DialogueManager : MonoBehaviour {
 	public Text dText;
 
 	public bool dialogActive;
-	public bool cutScene = false;
+	public bool cutScene;
 	public bool dialogEnded = false;
-
 
 	public string[] dialogLines;
 	public int currentLine;
