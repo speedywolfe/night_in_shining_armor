@@ -17,7 +17,6 @@ public class EnemyHealthManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
 		if (CurrentHealth <= 0) {
 			Destroy (gameObject);
 			thePlayer.GetComponent<ConfidenceManager>().ChangeConfidence(RaiseConfidence);

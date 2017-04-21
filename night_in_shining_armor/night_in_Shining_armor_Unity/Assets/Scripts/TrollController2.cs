@@ -3,8 +3,6 @@ using System.Collections;
 
 public class TrollController2 : MonoBehaviour {
 
-//	private Vector3 moveDirection;
-
 	private GameObject Enemy;
 	private GameObject Player;
 	private Vector2 velocity = new Vector2(5.0f, 5.0f);
@@ -16,7 +14,6 @@ public class TrollController2 : MonoBehaviour {
 	private doorController dControl;
 	private EnemyHealthManager EHMan;
 
-	// Use this for initialization
 	void Start () {
 		Enemy = GameObject.Find ("troll2");
 		Player = GameObject.Find("Player");
@@ -27,7 +24,6 @@ public class TrollController2 : MonoBehaviour {
 		EHMan = gameObject.GetComponent<EnemyHealthManager> ();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if (stillMoving) {
 			velocity = new Vector2((transform.position.x - Player.transform.position.x) * Speed, (transform.position.y - Player.transform.position.y) * Speed);
@@ -40,8 +36,9 @@ public class TrollController2 : MonoBehaviour {
 		}
 
 		print (EHMan.CurrentHealth);
-		if(EHMan.CurrentHealth < 5) {
+		if(EHMan.CurrentHealth < 10) {
 			dControl.clearingDoor = true;
+			EHMan.CurrentHealth = 0;
 		}
 	}
 }

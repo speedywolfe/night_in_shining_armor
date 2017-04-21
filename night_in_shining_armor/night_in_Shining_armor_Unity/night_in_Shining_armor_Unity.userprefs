@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DialogueManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/DialogueHolder.cs" Line="21" Column="42" />
-      <File FileName="Assets/Scripts/DialogueManager.cs" Line="51" Column="5" />
-      <File FileName="Assets/Scripts/NpcController.cs" Line="7" Column="2" />
-      <File FileName="Assets/Scripts/TrollController2.cs" Line="43" Column="29" />
+      <File FileName="Assets/Scripts/TrollController2.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DialogueHolder.cs" Line="51" Column="26" />
+      <File FileName="Assets/Scripts/TrollCutScene.cs" Line="14" Column="31" />
+      <File FileName="Assets/Scripts/DialogueManager.cs" Line="35" Column="20" />
+      <File FileName="Assets/Scripts/NpcController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/doorController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/TrollController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SlimeController.cs" Line="1" Column="1" />
